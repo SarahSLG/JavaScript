@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex008.1</title>
+</head>
+<style>
+    div#b{
+        background-color: aqua;
+        width:200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    div#res{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+
+    <h1>Somando valores</h1>
+    
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <div id="b" onclick="clicar()">
+        Caixinha surpresa!
+    </div>
+
+    <script>
+
+        function somar(){
+            var n1 = window.document.getElementById('num1')
+            var n2 = window.document.getElementById('num2')
+            var res = window.document.getElementById('res')
+
+            // Quando algo vem de uma caixa de texto, ele é texto. Por isso:
+            var nu1 = Number(n1.value)
+            var nu2 = Number(n2.value)
+
+            var s = nu1 + nu2
+
+            res.innerHTML = `A soma entre ${nu1} e ${nu2} é igual a <strong>${s}</strong>`
+        }
+
+        function clicar(){
+            var c = window.document.getElementById('b') //fiz a ligação com a div
+            c.innerText = 'Clicou!'
+        }
+
+    </script>
+    
+</body>
+</html>

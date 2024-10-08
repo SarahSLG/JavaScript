@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+</head>
+<body>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número')) //retorna string, caracteristica do comando
+
+        var n2 = Number.parseInt(window.prompt('Digite o segundo número'))
+
+        //var n2 = Number(window.prompt('Digite o segundo número'))
+
+        var s = n1 + n2
+        //window.alert('A soma dos valores é : ' + String(s))
+
+        window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${s}`)
+
+        // (number + number) para adição 
+        // (string + string) para contatenação 
+
+        // CONVERSÃO DE DADOS DE STRING PARA NUMBER:
+        // Number.parseInt(n) --> para Int
+        // Number.parseFloat(n) --> para Float
+
+        // Versão atual: 
+        // Próprio JavaScript se vira para saber qual o tipo
+        // Number(n)
+
+        // CONVERSÃO DE DADOS DE NUMBER PARA STRING: 
+        // String(n)
+        // n.toString()
+
+        // FORMATANDO STRING - TEMPLATE DE STRING:
+        // placeholder
+        // ${n}
+
+        // Formatando string:
+        // s.lenght - quantos carcateres a string tem
+        // s.toUpperCase() - tudo para 'MAIÚSCULAS'
+        // s.toLowerCase() - tudo para 'minúsculas'
+
+    </script>
+</body>
+</html>

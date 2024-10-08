@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+</head>
+<body> 
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        //document.write('Seu nome tem ' + nome.length + ' letras') //escreve dentro do hmtl
+
+        // da para usar hmtl dentro desse comando...
+        document.write(`<h2> Seu nome tem  ${nome.length} letras </h2> <br>`)
+
+        document.write(`Seu nome em maiusculas é <strong>${nome.toUpperCase()} <br>`)
+
+        document.write(`Seu nome em minusculas é <strong>${nome.toLowerCase()} <br>`)
+
+        //strong deixa em negrito
+
+        //FORMATANDO NÚMEROS
+        //n1.toFixed(2) - método interno do Number
+        //n1.toFixed(2).replace('.', ',')
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        //currency é dinheiro
+        // no navegador faz a inversão que é uma beleza
+
+    </script>
+
+</body> 
+</html>
